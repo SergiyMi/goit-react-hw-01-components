@@ -1,0 +1,33 @@
+/* @randCol: 'Math.floor(Math.random() * 256'; */
+
+.section {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  width: 268px;
+  height: 152px;
+  border: 1px solid red;
+}
+
+.list {
+  margin: 0, auto;
+  text-align: center;
+  display: flex;
+  padding-left: 0;
+}
+
+.item {
+  border: 1px solid rgb(228, 233, 240);
+  background-color: rgb(113, 116, 249);
+  /* background-color: ~'@{randCol}'; */
+  display: block;
+  height: 60px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+}
+
+.percentage {
+  display: block;
+}
