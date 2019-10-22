@@ -36,16 +36,4 @@ Stats.propTypes = {
         ).isRequired
 }
 
-// const RandomColor = () => {
-//     const colArray = [];
-//     const count =3;
-//     for (let i=0; i<count; i += 1) {
-//         colArray.push(Math.floor(Math.random() * 255));
-//     }
-//     const li = document.getElementsByTagName("li");
-//     li.style.cssText = `background: rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)});`;
-//     // console.log(colArray);
-//     return colArray;
-// }
-
 export default Stats;

@@ -3,8 +3,7 @@ import T from 'prop-types';
 
 import styles from './TransactionHistory.module.css';
 
-const TransactionHistory = ({items}) => {
-    return (
+const TransactionHistory = ({items}) => (
         <table className={styles.transactionHistory}>
         <thead className={styles.thead}>
             <tr>
@@ -23,8 +22,7 @@ const TransactionHistory = ({items}) => {
             ))}
         </tbody>
     </table>
-    )
-}
+)
 
 TransactionHistory.propTypes = {
     items: T.arrayOf (

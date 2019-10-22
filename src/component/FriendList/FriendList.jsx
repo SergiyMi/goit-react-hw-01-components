@@ -4,17 +4,22 @@ import T from 'prop-types';
 import FriendListItem from './FriendListItem';
 import styles from './FriendList.module.css';
 
-const FriendList = ({ friends }) => {
-    const avatar = friends.map(friend => friend.avatar);
-    const name = friends.map(friend => friend.name);
-    const isOnline = friends.map(friend => friend.isOnline);
+const destruct = (array) => {
+    const avatar = array.map(ar => ar.avatar);
+    const name = array.map(ar => ar.name);
+    const isOnline = array.map(ar => ar.isOnline);
+    return {
+        avatar, name, isOnline
+    };
+}
 
+const FriendList = ({ friends }) => {
     return (
         <ul className={styles.friendList}>
                 <FriendListItem
-                avatar = { avatar }
-                name = { name }
-                isOnline = { isOnline }
+                avatar = { destruct(friends).avatar }
+                name = { destruct(friends).name }
+                isOnline = { destruct(friends).isOnline }
                 friends = { friends }
             />
         </ul>

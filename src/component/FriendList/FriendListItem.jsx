@@ -6,7 +6,7 @@ const FriendListItem = ({ avatar, name, isOnline, friends }) => {
     return (
         friends.map((friend, index) => (
                 <li className={styles.item}>
-                <span className={isOnline[index] ? styles.isOn : styles.isOff + ' ' + styles.circle}></span>
+                <span className={isOnline[index] ? styles.isOn + ' ' + styles.circle : styles.isOff + ' ' + styles.circle}></span>
                 <img className={styles.avatar} src={avatar[index]} alt=""/>
                 <p className={styles.name}>{name[index]}</p>
             </li>

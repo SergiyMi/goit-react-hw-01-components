@@ -5,12 +5,12 @@ import Profile from '../Profile/Profile';
 import Stats from '../Stats/Stats';
 import FriendList from '../FriendList/FriendList';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
-import user from '../../user.json';
-import stats from '../../stats.json';
-import friends from '../../friends.json';
-import transactions from '../../transaction.json';
+import user from '../../DB/user.json';
+import stats from '../../DB/stats.json';
+import friends from '../../DB/friends.json';
+import transactions from '../../DB/transaction.json';
 
-function App() {
+const App = () => {
   return (
     <>
       <Profile user={user} />
